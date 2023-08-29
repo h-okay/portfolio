@@ -41,14 +41,14 @@ export default function Intro() {
           </motion.div>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quaerat
         culpa ipsam eligendi nihil officia veniam.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
