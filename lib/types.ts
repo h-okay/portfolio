@@ -16,3 +16,4 @@ export type SendEmailResponseType = {
   name: string;
   statusCode: number;
 };
+export type Theme = "light" | "dark";
