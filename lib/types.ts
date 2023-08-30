@@ -10,3 +10,9 @@ export type ActiveSectionContextType = {
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
+
+export type SendEmailResponseType = {
+  message: string;
+  name: string;
+  statusCode: number;
+};
