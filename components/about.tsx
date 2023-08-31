@@ -17,22 +17,24 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
-        Rem, ducimus. Inventore nobis temporibus debitis saepe, quia in facilis
-        dolor quod. Tempore natus, ratione ex nulla dolor eaque dolorem. Minus
-        est ad nam ratione a error voluptate impedit eos quod eveniet, et omnis
-        quisquam laudantium delectus harum modi tempora animi unde, consequatur
-        obcaecati veritatis voluptas culpa voluptatem eum. Obcaecati.
+      <p className="group mb-3">
+        My journey in the tech world began with a deep fascination for data
+        science and its potential to uncover valuable insights from complex
+        datasets. As a Data Scientist, I honed my skills in machine learning,
+        data analysis, and visualization, working on projects that involved
+        solving real-world challenges with data-driven solutions. I had the
+        chance to collaborate with some of the biggest gaming companies in
+        Europe, which provided me with invaluable experiences and a deep
+        understanding of the industry's inner workings.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam error
-        reprehenderit veritatis adipisci cum officia natus porro, consequatur a
-        doloremque non repellendus accusamus nemo et optio hic, nihil
-        perferendis? Neque. Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Quis inventore incidunt quisquam ex hic. Dicta, quod commodi
-        nesciunt vel quas harum illum est suscipit animi dolore porro eius ipsa
-        eligendi.
+        After I decided to learn web development to be able to provide
+        end-to-end, full-stack solutions to companies so that the insights can
+        be easily shared with relevant stakeholders. I added various web
+        development technologies to my skillset, including React, Next.js, and
+        Tailwind CSS. Now I'm working as a freelance web developer, helping
+        companies build their online presence and create data-driven web
+        applications.
       </p>
     </motion.section>
   );

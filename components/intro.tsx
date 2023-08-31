@@ -50,12 +50,15 @@ export default function Intro() {
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-normal leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quaerat
-        culpa ipsam eligendi nihil officia veniam.
+        Hello, <span className="font-semibold">I'm Hakan.</span> I'm a Software
+        Developer with 3 years of experience. I ❤️ building{" "}
+        <span className="font-semibold">web applications</span> to solve
+        real-world problems and share{" "}
+        <span className="font-semibold">data-driven insights.</span>
       </motion.h1>
 
       <motion.div
@@ -80,7 +83,7 @@ export default function Intro() {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/HakanOkayResume.pdf"
           download
         >
           Resume

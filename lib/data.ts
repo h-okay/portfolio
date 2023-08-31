@@ -1,10 +1,27 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { TbDatabaseHeart, TbSql } from "react-icons/tb";
+import { AiFillPlusCircle, AiOutlineCloudServer } from "react-icons/ai";
+import { BsCode } from "react-icons/bs";
+import {
+  FaCss3Alt,
+  FaDocker,
+  FaHtml5,
+  FaJava,
+  FaLinux,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
+import { BiLogoGit, BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import {
+  SiApacheairflow,
+  SiExpress,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
+import blastImg from "@/public/blast.png";
+import nbaImg from "@/public/nba.png";
+import diamondsImg from "@/public/diamonds.png";
 
 export const links = [
   {
@@ -35,73 +52,70 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Developer",
+    location: "Ottawa, ON",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Crafted tailored solutions using diverse technologies, such as Python, Docker, and BigQuery, to create data-driven marketing approaches, secure backend APIs, and interactive dashboards for informed decision-making",
+    icon: React.createElement(BsCode),
+    date: "2022 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Data Scientist",
+    location: "Istanbul, Turkey",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Contributed to efficient cloud-based data pipelines and analysis endpoints, enabling cross-platform insights, user engagement improvements, and growth within the Blast Data Platform while utilizing Airflow, Kubernetes, and various cloud services",
+    icon: React.createElement(TbDatabaseHeart),
+    date: "2022 - 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Blast Data Platform",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked as a Data / Backend Engineer on this startup for a year. Users can easily create and manage data pipelines on the cloud.",
+    tags: ["Python", "SQL", "Airflow", "Kubernetes", "Docker", "GCP"],
+    imageUrl: blastImg,
   },
   {
-    title: "rmtDev",
+    title: "Dash NBA",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Dashboard providing NBA stats, analytics and machine learning predictions. It has features for classification, clustering as well as player and team statistics.",
+    tags: ["Python", "SQL", "Airflow", "Dash", "Scikit-Learn"],
+    imageUrl: nbaImg,
   },
   {
-    title: "Word Analytics",
+    title: "Diamonds",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Web application for diamond price prediction. It has features for data exploration, filtering, sorting and price prediction.",
+    tags: ["Python", "Pandas", "Scikit-Learn", "Streamlit"],
+    imageUrl: diamondsImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  { name: "Python", icon: React.createElement(FaPython) },
+  { name: "SQL", icon: React.createElement(TbSql) },
+  { name: "Java", icon: React.createElement(FaJava) },
+  { name: "Git", icon: React.createElement(BiLogoGit) },
+  { name: "Airflow", icon: React.createElement(SiApacheairflow) },
+  { name: "Linux", icon: React.createElement(FaLinux) },
+  { name: "Docker", icon: React.createElement(FaDocker) },
+  {
+    name: "Google Cloud Platform",
+    icon: React.createElement(AiOutlineCloudServer),
+  },
+  { name: "HTML", icon: React.createElement(FaHtml5) },
+  { name: "CSS", icon: React.createElement(FaCss3Alt) },
+  { name: "JavaScript", icon: React.createElement(BiLogoJavascript) },
+  { name: "TypeScript", icon: React.createElement(BiLogoTypescript) },
+  { name: "React", icon: React.createElement(FaReact) },
+  { name: "Next.js", icon: React.createElement(SiNextdotjs) },
+  { name: "Node.js", icon: React.createElement(FaNodeJs) },
+  { name: "Tailwind", icon: React.createElement(SiTailwindcss) },
+  { name: "Express", icon: React.createElement(SiExpress) },
+  {
+    name: "Many more to come...",
+    icon: React.createElement(AiFillPlusCircle),
+  },
 ] as const;

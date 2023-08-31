@@ -10,9 +10,9 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hakan Okay | Software Engineer",
+  title: "Hakan Okay | Software Developer",
   description:
-    "Hakan Okay is a Software Engineer with 3 years of experience. He has experience in Data Science, Data Engineering and Fullstack Web Development.",
+    "Hakan Okay is a Software Developer with 3 years of experience. He has experience in Data Science, Data Engineering and Fullstack Web Development. His favorite technologies are Python, React, Next.js, Tailwind CSS and PostgreSQL.",
 };
 
 export default function RootLayout({

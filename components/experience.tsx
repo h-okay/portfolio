@@ -10,6 +10,7 @@ import { experiencesData } from "@/lib/data";
 import { Fragment } from "react";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import clsx from "clsx";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -36,11 +37,13 @@ export default function Experience() {
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
-              dateClassName={index % 2 === 0 ? "text-left" : "text-right"}
+              dateClassName={clsx(
+                index % 2 === 0 ? "text-left" : "text-right",
+                "!float-none"
+              )}
               icon={item.icon}
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(29, 36, 50, 1)",
+                background: theme === "light" ? "white" : "rgba(29, 36, 50, 1)",
                 fontSize: "1.5rem",
               }}
             >

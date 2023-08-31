@@ -33,6 +33,7 @@ export default function Contact() {
       </p>
 
       <form
+        id="contact-form"
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -41,6 +42,10 @@ export default function Contact() {
             return;
           }
           toast.success("Email sent successfully!");
+          const form = document.getElementById(
+            "contact-form"
+          ) as HTMLFormElement;
+          form.reset();
         }}
       >
         <input

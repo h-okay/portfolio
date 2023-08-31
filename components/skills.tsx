@@ -37,7 +37,10 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            <div className="flex flex-row justify-center items-center gap-2">
+              {skill.icon}
+              {skill.name}
+            </div>
           </motion.li>
         ))}
       </ul>
