@@ -32,7 +32,7 @@ export default function About() {
         end-to-end, full-stack solutions to companies so that the insights can
         be easily shared with relevant stakeholders. I added various web
         development technologies to my skillset, including React, Next.js, and
-        Tailwind CSS. Now I'm working as a freelance web developer, helping
+        Tailwind CSS. Currently, I'm working as a freelance software developer, helping
         companies build their online presence and create data-driven web
         applications.
       </p>

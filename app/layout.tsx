@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Hakan Okay | Software Developer",
   description:
-    "Hakan Okay is a Software Developer with 3 years of experience. He has experience in Data Science, Data Engineering and Fullstack Web Development. His favorite technologies are Python, React, Next.js, Tailwind CSS and PostgreSQL.",
+    "Hakan Okay is a Software Developer with 3 years of experience. He has experience in Data Science, Data Engineering and Fullstack Web Development. His favorite technologies are Python, SQL, React, Tailwind, Airflow, BigQuery and Snowflake.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,6 @@ export default function RootLayout({
       >
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Toaster position="top-right" />
