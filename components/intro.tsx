@@ -75,10 +75,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Say
-          <p className="group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-yellow-300 group-hover:to-violet-500">
-            Hello
-          </p>
+          Say Hello
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
