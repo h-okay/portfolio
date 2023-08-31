@@ -6,6 +6,7 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import Link from "next/link";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
@@ -66,9 +67,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        <a
+        <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-500"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -76,7 +77,7 @@ export default function Intro() {
         >
           Say Hello
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </a>
+        </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/HakanOkayResume.pdf"
@@ -85,20 +86,22 @@ export default function Intro() {
           Resume
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/hakan-okay/"
-          className="bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href="https://github.com/h-okay"
-          className="bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          target="_blank"
-        >
-          <BsGithub />
-        </a>
+        <div className="flex gap-2"> 
+          <a
+            href="https://www.linkedin.com/in/hakan-okay/"
+            className="bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href="https://github.com/h-okay"
+            className="bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            target="_blank"
+          >
+            <BsGithub />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
