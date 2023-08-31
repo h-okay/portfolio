@@ -6,8 +6,6 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "@/components/submit-btn";
 import toast from "react-hot-toast";
-import { isEmailSentSuccessfullByStatusCode } from "@/lib/utils";
-import { SendEmailResponseType } from "@/lib/types";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");

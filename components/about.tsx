@@ -17,7 +17,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="group mb-3">
+      <p className="mb-3">
         My journey in the tech world began with a deep fascination for data
         science and its potential to uncover valuable insights from complex
         datasets. As a Data Scientist, I honed my skills in machine learning,
