@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://hakanokay.dev/sitemap.xml
