@@ -6,8 +6,8 @@ export default function Footer() {
       </small>
       <p className="text-xs">
         <span className="font-semibold">
-          Made with ❤️ React & Next.js (App Router & Server Actions),
-          Typescript, Tailwind CSS, Framer Motion, React Email & Resend
+          Made with ❤️ using React & Next.js, Typescript, Tailwind CSS, Framer
+          Motion, Resend
         </span>
       </p>
       <p className="text-xs">
