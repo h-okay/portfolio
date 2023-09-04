@@ -6,14 +6,14 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Hakan Okay | Software Developer",
   description:
-    "Hakan Okay is a Software Developer with 3 years of experience. He has experience in Data Science, Data Engineering and Fullstack Web Development. His favorite technologies are Python, SQL, React, Tailwind, Airflow, BigQuery and Snowflake.",
+    "Hakan Okay is a Software Developer with 3 years of experience in Data Science/Engineering and Web Development. He loves Python, SQL, React, Airflow and BigQuery",
 };
 
 export default function RootLayout({
