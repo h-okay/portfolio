@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, createContext, useContext } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+
 import { Theme } from "@/lib/types";
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
@@ -14,7 +15,9 @@ type ThemeContextType = {
   toggleTheme: () => void;
 };
 
-export default function ThemeContextProvider({ children }: ThemeContextProviderProps) {
+export default function ThemeContextProvider({
+  children,
+}: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {

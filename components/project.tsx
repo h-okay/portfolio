@@ -1,12 +1,13 @@
 "use client";
 
+import { useScroll, useTransform } from "framer-motion";
+
+import { AiOutlineLink } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
-import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
-import { AiOutlineLink } from "react-icons/ai";
+import { projectsData } from "@/lib/data";
+import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 

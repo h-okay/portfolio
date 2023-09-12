@@ -1,9 +1,10 @@
 "use server";
 
+import { getErrorMessage, validateString } from "@/lib/utils";
+
+import ContactFormEmail from "@/email/contact-form-email";
 import React from "react";
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "@/lib/utils";
-import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_KEY);
 

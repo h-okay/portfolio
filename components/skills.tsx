@@ -1,9 +1,9 @@
 "use client";
 
 import SectionHeading from "./section-heading";
-import { useSectionInView } from "@/lib/hooks";
 import SkillsSection from "./skills-section";
 import clsx from "clsx";
+import { useSectionInView } from "@/lib/hooks";
 
 const SectionNameMapping = {
   language: "Languages",

@@ -1,12 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+
 import { HiDownload } from "react-icons/hi";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");

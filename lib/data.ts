@@ -7,7 +7,6 @@ import {
   BiLogoPhp,
   BiLogoTypescript,
 } from "react-icons/bi";
-import { BsGraphUpArrow } from "react-icons/bs";
 import {
   FaCss3Alt,
   FaDev,
@@ -43,14 +42,15 @@ import {
 } from "react-icons/si";
 import { TbBrandLaravel, TbBrandThreejs, TbSql } from "react-icons/tb";
 
+import { BsGraphUpArrow } from "react-icons/bs";
 import { DiGoogleCloudPlatform } from "react-icons/di";
 import { MdScience } from "react-icons/md";
 import React from "react";
 import { VscGithubAction } from "react-icons/vsc";
 import blastImg from "@/public/blast.png";
 import diamondsImg from "@/public/diamonds.png";
-import nbaImg from "@/public/nba.png";
 import githubImg from "@/public/github.png";
+import nbaImg from "@/public/nba.png";
 
 export const links = [
   {
@@ -190,7 +190,11 @@ export const skillsData = [
     icon: React.createElement(BiLogoTypescript),
     type: "language",
   },
-  { name: "NoSQL", icon: React.createElement(BiLogoMongodb), type: "language" },
+  {
+    name: "NoSQL",
+    icon: React.createElement(BiLogoMongodb),
+    type: "language",
+  },
   { name: "Pandas", icon: React.createElement(SiPandas), type: "framework" },
   { name: "NumPy", icon: React.createElement(SiNumpy), type: "framework" },
   {
@@ -203,7 +207,11 @@ export const skillsData = [
     icon: React.createElement(SiScikitlearn),
     type: "framework",
   },
-  { name: "FastAPI", icon: React.createElement(SiFastapi), type: "framework" },
+  {
+    name: "FastAPI",
+    icon: React.createElement(SiFastapi),
+    type: "framework",
+  },
   { name: "React", icon: React.createElement(FaReact), type: "framework" },
   {
     name: "Next.js",
@@ -216,7 +224,11 @@ export const skillsData = [
     icon: React.createElement(SiTailwindcss),
     type: "framework",
   },
-  { name: "Express", icon: React.createElement(SiExpress), type: "framework" },
+  {
+    name: "Express",
+    icon: React.createElement(SiExpress),
+    type: "framework",
+  },
   { name: "Linux", icon: React.createElement(FaLinux), type: "platform" },
   { name: "Git", icon: React.createElement(BiLogoGit), type: "platform" },
   { name: "Docker", icon: React.createElement(FaDocker), type: "platform" },
@@ -231,7 +243,11 @@ export const skillsData = [
     type: "platform",
   },
   { name: "Looker", icon: React.createElement(SiLooker), type: "platform" },
-  { name: "Metabase", icon: React.createElement(SiMetabase), type: "platform" },
+  {
+    name: "Metabase",
+    icon: React.createElement(SiMetabase),
+    type: "platform",
+  },
   {
     name: "Excel",
     icon: React.createElement(SiMicrosoftexcel),
