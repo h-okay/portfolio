@@ -3,8 +3,9 @@
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import SkillsSection from "./skills-section";
+import clsx from "clsx";
 
-const skillSectionMapping = {
+const SectionNameMapping = {
   language: "Languages",
   framework: "Frameworks & Libraries",
   platform: "Platforms & Tools",
@@ -22,11 +23,16 @@ export default function Skills() {
     >
       <SectionHeading>Skills</SectionHeading>
       <ul className="text-lg text-gray-800">
-        {Object.entries(skillSectionMapping).map(([type, title], index) => (
+        {Object.entries(SectionNameMapping).map(([type, title], index) => (
           <SkillsSection
+            className={clsx(
+              index !== 0 ? "pt-4" : "",
+              index === Object.keys(SectionNameMapping).length - 1 ? "" : "pb-4"
+            )}
             key={index}
-            type={type as keyof typeof skillSectionMapping}
+            type={type as keyof typeof SectionNameMapping}
             title={title}
+            sectionIndex={index}
           />
         ))}
       </ul>

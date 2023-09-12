@@ -60,40 +60,41 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Developer",
-    location: "Ottawa, ON",
+    title: React.createElement("span", { className: "text-sm" }, "Software Developer @ Freelance"),
+    location: "Ottawa, ON 🍁",
     description:
       "Crafted tailored solutions using diverse technologies, such as Python, Docker, and BigQuery, to create data-driven marketing approaches, secure backend APIs, and interactive dashboards for informed decision-making",
     icon: React.createElement(BsCode),
-    date: "2022 - present",
+    date: "Feb 2023 - present",
   },
   {
-    title: "Data Scientist",
-    location: "Istanbul, Turkey",
+    title: React.createElement("span", { className: "text-sm" }, "Data Scientist @ Datablast"),
+    location: "Remote",
     description:
       "Contributed to efficient cloud-based data pipelines and analysis endpoints, enabling cross-platform insights, user engagement improvements, and growth within the Blast Data Platform while utilizing Airflow, Kubernetes, and various cloud services",
     icon: React.createElement(TbDatabaseHeart),
-    date: "2022 - 2023",
+    date: "Mar 2022 - Feb 2023",
   },
 ] as const;
-
+// TODO: Make the project tech stack icons clickable and link to the project
+// TODO: Also change techologies on click with user feedback, user should have hints that the icons are clickable
 export const projectsData = [
   {
     title: "Blast Data Platform",
     description:
       "I worked as a Data / Backend Engineer on this startup for a year. Users can easily create and manage data pipelines on the cloud.",
-    tags: ["Python", "SQL", "Airflow", "Kubernetes", "Docker", "GCP"],
+    tags: ["Python", "SQL", "Airflow", "Kubernetes", "Docker", "..."],
     imageUrl: blastImg,
   },
   {
-    title: "Dash NBA",
+    title: "NBA Analytics",
     description:
       "Dashboard providing NBA stats, analytics and machine learning predictions. It has features for classification, clustering as well as player and team statistics.",
-    tags: ["Python", "SQL", "Airflow", "Dash", "Scikit-Learn"],
+    tags: ["Python", "SQL", "PHP", "Bash", "Github CI/CD", "Scikit-learn", "Tensorflow", "GCP", "FastAPI"],
     imageUrl: nbaImg,
   },
   {
-    title: "Diamonds",
+    title: "Gem Trend",
     description:
       "Web application for diamond price prediction. It has features for data exploration, filtering, sorting and price prediction.",
     tags: ["Python", "Pandas", "Scikit-Learn", "Streamlit"],
