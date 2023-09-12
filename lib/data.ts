@@ -6,12 +6,13 @@ import {
   BiLogoMongodb,
   BiLogoPhp,
   BiLogoTypescript,
-  BiLogoVuejs,
 } from "react-icons/bi";
-import { BsCode, BsGraphUpArrow } from "react-icons/bs";
+import { BsGraphUpArrow } from "react-icons/bs";
 import {
   FaCss3Alt,
+  FaDev,
   FaDocker,
+  FaGithub,
   FaHtml5,
   FaJava,
   FaLinux,
@@ -25,6 +26,8 @@ import {
   SiExpress,
   SiFastapi,
   SiGnubash,
+  SiJinja,
+  SiJupyter,
   SiKubernetes,
   SiLooker,
   SiMetabase,
@@ -32,24 +35,22 @@ import {
   SiNextdotjs,
   SiNumpy,
   SiPandas,
+  SiPlotly,
   SiScikitlearn,
   SiStreamlit,
   SiTailwindcss,
   SiTensorflow,
 } from "react-icons/si";
-import {
-  TbBrandLaravel,
-  TbBrandThreejs,
-  TbDatabaseHeart,
-  TbSql,
-} from "react-icons/tb";
+import { TbBrandLaravel, TbBrandThreejs, TbSql } from "react-icons/tb";
 
 import { DiGoogleCloudPlatform } from "react-icons/di";
+import { MdScience } from "react-icons/md";
 import React from "react";
 import { VscGithubAction } from "react-icons/vsc";
 import blastImg from "@/public/blast.png";
 import diamondsImg from "@/public/diamonds.png";
 import nbaImg from "@/public/nba.png";
+import githubImg from "@/public/github.png";
 
 export const links = [
   {
@@ -88,7 +89,7 @@ export const experiencesData = [
     location: "Ottawa, ON 🍁",
     description:
       "Crafted tailored solutions using diverse technologies, such as Python, Docker, and BigQuery, to create data-driven marketing approaches, secure backend APIs, and interactive dashboards for informed decision-making",
-    icon: React.createElement(BsCode),
+    icon: React.createElement(FaDev),
     date: "Feb 2023 - present",
   },
   {
@@ -100,7 +101,7 @@ export const experiencesData = [
     location: "Remote",
     description:
       "Contributed to efficient cloud-based data pipelines and analysis endpoints, enabling cross-platform insights, user engagement improvements, and growth within the Blast Data Platform while utilizing Airflow, Kubernetes, and various cloud services",
-    icon: React.createElement(TbDatabaseHeart),
+    icon: React.createElement(MdScience),
     date: "Mar 2022 - Feb 2023",
   },
 ] as const;
@@ -109,7 +110,8 @@ export const projectsData = [
   {
     title: "Blast Data Platform",
     description:
-      "I worked as a Data / Backend Engineer on this startup for a year. Users can easily create and manage data pipelines on the cloud.",
+      "I worked as a Data and Backend Engineer on this startup for a year. Users can easily create and manage data pipelines on the cloud.",
+    link: "https://www.datablast.io/blast",
     tags: [
       React.createElement(FaPython),
       React.createElement(TbSql),
@@ -120,6 +122,7 @@ export const projectsData = [
       React.createElement(TbBrandLaravel),
       React.createElement(SiFastapi),
       React.createElement(FaLinux),
+      React.createElement(SiJinja),
     ],
     imageUrl: blastImg,
   },
@@ -127,6 +130,7 @@ export const projectsData = [
     title: "NBA Analytics",
     description:
       "Dashboard providing NBA stats, analytics and machine learning predictions. It has features for classification, clustering as well as player and team statistics.",
+    link: "https://github.com/h-okay/dash-nba",
     tags: [
       React.createElement(FaPython),
       React.createElement(TbSql),
@@ -137,20 +141,36 @@ export const projectsData = [
       React.createElement(SiTensorflow),
       React.createElement(DiGoogleCloudPlatform),
       React.createElement(SiFastapi),
+      React.createElement(SiPlotly),
     ],
     imageUrl: nbaImg,
   },
   {
     title: "Gem Trend",
     description:
-      "Web application for diamond price prediction. It has features for data exploration, filtering, sorting and price prediction.",
+      "Web application for diamond price prediction. It has features for data exploration, filtering, sorting and price prediction through XGBoost and Linear Regressions models.",
+    link: "https://github.com/h-okay/random/tree/main/diamonds",
     tags: [
       React.createElement(FaPython),
       React.createElement(SiPandas),
       React.createElement(SiScikitlearn),
       React.createElement(SiStreamlit),
+      React.createElement(FaDocker),
+      React.createElement(SiJupyter),
+      React.createElement(SiGnubash),
+      React.createElement(BsGraphUpArrow),
+      React.createElement(SiNumpy),
+      React.createElement(FaGithub),
     ],
     imageUrl: diamondsImg,
+  },
+  {
+    title: "Check my GitHub!",
+    description:
+      "I'm always working on something new. Check out my GitHub for more projects. I'm always open to new ideas and collaborations!",
+    link: "https://github.com/h-okay?tab=repositories",
+    tags: ["🧑‍💻"],
+    imageUrl: githubImg,
   },
 ] as const;
 
