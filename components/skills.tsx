@@ -32,7 +32,6 @@ export default function Skills() {
             key={index}
             type={type as keyof typeof SectionNameMapping}
             title={title}
-            sectionIndex={index}
           />
         ))}
       </ul>
