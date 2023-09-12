@@ -23,11 +23,16 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:hokay.ca@gmail.com">
-          hokay.ca@gmail.com
-        </a>{" "}
-        or through this form.
+        Please{" "}
+        <a
+          className="border-b-2 border-black/50 hover:text- dark:border-white dark:hover:border-gray-300 dark:hover:text-gray-300"
+          href="https://koalendar.com/e/hakan-okay"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          book a meeting
+        </a>
+        {" "}or contact me through this form.
       </p>
 
       <form
