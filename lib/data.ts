@@ -1,7 +1,7 @@
 import React from "react";
-import { TbDatabaseHeart, TbSql } from "react-icons/tb";
-import { AiFillPlusCircle, AiOutlineCloudServer } from "react-icons/ai";
-import { BsCode } from "react-icons/bs";
+import { TbBrandThreejs, TbDatabaseHeart, TbSql } from "react-icons/tb";
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { BsCode, BsGraphUpArrow } from "react-icons/bs";
 import {
   FaCss3Alt,
   FaDocker,
@@ -11,12 +11,20 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
+  FaRust,
 } from "react-icons/fa";
-import { BiLogoGit, BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import { BiLogoAws, BiLogoGit, BiLogoGoLang, BiLogoJavascript, BiLogoMongodb, BiLogoTypescript } from "react-icons/bi";
 import {
   SiApacheairflow,
   SiExpress,
+  SiFastapi,
+  SiLooker,
+  SiMetabase,
+  SiMicrosoftexcel,
   SiNextdotjs,
+  SiNumpy,
+  SiPandas,
+  SiScikitlearn,
   SiTailwindcss,
 } from "react-icons/si";
 import blastImg from "@/public/blast.png";
@@ -94,28 +102,34 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  { name: "Python", icon: React.createElement(FaPython) },
-  { name: "SQL", icon: React.createElement(TbSql) },
-  { name: "Java", icon: React.createElement(FaJava) },
-  { name: "Git", icon: React.createElement(BiLogoGit) },
-  { name: "Airflow", icon: React.createElement(SiApacheairflow) },
-  { name: "Linux", icon: React.createElement(FaLinux) },
-  { name: "Docker", icon: React.createElement(FaDocker) },
-  {
-    name: "Google Cloud Platform",
-    icon: React.createElement(AiOutlineCloudServer),
-  },
-  { name: "HTML", icon: React.createElement(FaHtml5) },
-  { name: "CSS", icon: React.createElement(FaCss3Alt) },
-  { name: "JavaScript", icon: React.createElement(BiLogoJavascript) },
-  { name: "TypeScript", icon: React.createElement(BiLogoTypescript) },
-  { name: "React", icon: React.createElement(FaReact) },
-  { name: "Next.js", icon: React.createElement(SiNextdotjs) },
-  { name: "Node.js", icon: React.createElement(FaNodeJs) },
-  { name: "Tailwind", icon: React.createElement(SiTailwindcss) },
-  { name: "Express", icon: React.createElement(SiExpress) },
-  {
-    name: "Many more to come...",
-    icon: React.createElement(AiFillPlusCircle),
-  },
+  { name: "Python", icon: React.createElement(FaPython), type: "language" },
+  { name: "Java", icon: React.createElement(FaJava), type: "language" },
+  { name: "SQL", icon: React.createElement(TbSql), type: "language" },
+  { name: "HTML", icon: React.createElement(FaHtml5), type: "language" },
+  { name: "CSS", icon: React.createElement(FaCss3Alt), type: "language" },
+  { name: "JavaScript", icon: React.createElement(BiLogoJavascript), type: "language" },
+  { name: "TypeScript", icon: React.createElement(BiLogoTypescript), type: "language" },
+  { name: "NoSQL", icon: React.createElement(BiLogoMongodb), type: "language" },
+  { name: "Pandas", icon: React.createElement(SiPandas), type: "framework" },
+  { name: "NumPy", icon: React.createElement(SiNumpy), type: "framework" },
+  { name: "Matplotlib", icon: React.createElement(BsGraphUpArrow), type: "framework" },
+  { name: "Scikit-learn", icon: React.createElement(SiScikitlearn), type: "framework" },
+  { name: "FastAPI", icon: React.createElement(SiFastapi), type: "framework" },
+  { name: "React", icon: React.createElement(FaReact), type: "framework" },
+  { name: "Next.js", icon: React.createElement(SiNextdotjs), type: "framework" },
+  { name: "Node.js", icon: React.createElement(FaNodeJs), type: "framework" },
+  { name: "Tailwind", icon: React.createElement(SiTailwindcss), type: "framework" },
+  { name: "Express", icon: React.createElement(SiExpress), type: "framework" },
+  { name: "Linux", icon: React.createElement(FaLinux), type: "platform" },
+  { name: "Git", icon: React.createElement(BiLogoGit), type: "platform" },
+  { name: "Docker", icon: React.createElement(FaDocker), type: "platform" },
+  { name: "Airflow", icon: React.createElement(SiApacheairflow), type: "platform" },
+  { name: "Google Cloud", icon: React.createElement(AiOutlineCloudServer), type: "platform" },
+  { name: "Looker", icon: React.createElement(SiLooker), type: "platform" },
+  { name: "Metabase", icon: React.createElement(SiMetabase), type: "platform" },
+  { name: "Excel", icon: React.createElement(SiMicrosoftexcel), type: "platform" },
+  { name: "Go", icon: React.createElement(BiLogoGoLang), type: "progress" },
+  { name: "Rust", icon: React.createElement(FaRust), type: "progress" },
+  { name: "Three.js", icon: React.createElement(TbBrandThreejs), type: "progress" },
+  { name: "AWS", icon: React.createElement(BiLogoAws), type: "progress" },
 ] as const;
