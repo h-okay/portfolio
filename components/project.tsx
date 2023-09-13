@@ -41,6 +41,7 @@ export default function Project({
             <Link
               href={link}
               className="flex gap-x-1 items-center sm:group-even:justify-end"
+              target="_blank"
             >
               {title}
               <AiOutlineLink className="text-sm" />
