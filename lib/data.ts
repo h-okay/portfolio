@@ -81,24 +81,16 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: React.createElement(
-      "span",
-      { className: "text-sm" },
-      "Software Developer @ Freelance"
-    ),
-    location: "Ottawa, ON 🍁",
+    title: "Software Developer",
+    location: "Freelance | Ottawa, ON 🍁",
     description:
       "Crafted tailored solutions using diverse technologies, such as Python, Docker, and BigQuery, to create data-driven marketing approaches, secure backend APIs, and interactive dashboards for informed decision-making",
     icon: React.createElement(FaDev),
-    date: "Feb 2023 - present",
+    date: "Feb 2023 - Present",
   },
   {
-    title: React.createElement(
-      "span",
-      { className: "text-sm" },
-      "Data Scientist @ Datablast"
-    ),
-    location: "Remote",
+    title: "Data Scientist",
+    location: "Datablast | Remote",
     description:
       "Contributed to efficient cloud-based data pipelines and analysis endpoints, enabling cross-platform insights, user engagement improvements, and growth within the Blast Data Platform while utilizing Airflow, Kubernetes, and various cloud services",
     icon: React.createElement(MdScience),
