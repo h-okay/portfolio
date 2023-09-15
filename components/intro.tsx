@@ -82,18 +82,17 @@ export default function Intro() {
           Say Hello{' '}
           <BsArrowRight className='opacity-70 transition group-hover:translate-x-1' />
         </Link>
-        <Link
+        <a
           id='resume'
           aria-label='Resume'
           title='Resume'
           className='borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10'
           href='/HakanOkayResume.pdf'
-          target='_blank'
           download
         >
           Resume
           <HiDownload className='opacity-60 transition group-hover:translate-y-1' />
-        </Link>
+        </a>
         <div className='flex gap-3'>
           <Link
             id='linkedin'
