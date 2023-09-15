@@ -1,6 +1,6 @@
-import { links } from "@/lib/data";
+import { links } from '@/lib/data';
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof links)[number]['name'];
 export type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
@@ -16,4 +16,4 @@ export type SendEmailResponseType = {
   name: string;
   statusCode: number;
 };
-export type Theme = "light" | "dark";
+export type Theme = 'light' | 'dark';

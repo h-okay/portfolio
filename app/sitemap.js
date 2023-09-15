@@ -1,6 +1,6 @@
-const URL = "https://hakanokay.dev";
+const URL = 'https://hakanokay.dev';
 
-const ROUTES = [""];
+const ROUTES = [''];
 
 export default async function sitemap() {
   const routes = ROUTES.map((route) => ({

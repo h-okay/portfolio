@@ -1,20 +1,20 @@
-import "./globals.css";
+import './globals.css';
 
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import { Analytics } from "@vercel/analytics/react";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import { Inter } from "next/font/google";
-import ThemeContextProvider from "@/context/theme-context";
-import ThemeSwitch from "@/components/theme-switch";
-import { Toaster } from "react-hot-toast";
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import ThemeSwitch from '@/components/theme-switch';
+import ActiveSectionContextProvider from '@/context/active-section-context';
+import ThemeContextProvider from '@/context/theme-context';
+import { Analytics } from '@vercel/analytics/react';
+import { Inter } from 'next/font/google';
+import { Toaster } from 'react-hot-toast';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Hakan Okay | Software Developer",
+  title: 'Hakan Okay | Software Developer',
   description:
-    "Hakan Okay is a Software Developer with 3 years of experience in Data Science/Engineering and Web Development. He loves Python, SQL, React, Airflow and BigQuery",
+    'Hakan Okay is a Software Developer with 3 years of experience in Data Science/Engineering and Web Development. He loves Python, SQL, React, Airflow and BigQuery',
 };
 
 export default function RootLayout({
@@ -23,15 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang='en' className='!scroll-smooth'>
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 sm:pt-36`}
       >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#cc3538]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        <div className='absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#cc3538] sm:w-[68.75rem]'></div>
+        <div className='absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]'></div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Toaster position="top-right" />
+            <Toaster position='top-right' />
             <Header />
             {children}
             <Footer />

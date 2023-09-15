@@ -8,10 +8,9 @@ import {
   Preview,
   Section,
   Text,
-} from "@react-email/components";
+} from '@react-email/components';
 
-import React from "react";
-import { Tailwind } from "@react-email/tailwind";
+import { Tailwind } from '@react-email/tailwind';
 
 type ContactFormEmailProps = {
   message: string;
@@ -27,10 +26,10 @@ export default function ContactFormEmail({
       <Head />
       <Preview>New message from hakanokay.dev!</Preview>
       <Tailwind>
-        <Body className="bg-gray-100 text-black">
+        <Body className='bg-gray-100 text-black'>
           <Container>
-            <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
-              <Heading className="leading-tight">
+            <Section className='borderBlack my-10 rounded-md bg-white px-10 py-4'>
+              <Heading className='leading-tight'>
                 You received the following message from the contact form
               </Heading>
               <Text>{message}</Text>
