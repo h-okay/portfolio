@@ -69,6 +69,9 @@ export default function Intro() {
         transition={{ delay: 0.1 }}
       >
         <Link
+          id="contact"
+          aria-label="Contact me"
+          title="Contact me"
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-[#84A7A1] dark:text-black"
           onClick={() => {
@@ -79,29 +82,39 @@ export default function Intro() {
           Say Hello{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a
+        <Link
+          id="resume"
+          aria-label="Resume"
+          title="Resume"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/HakanOkayResume.pdf"
+          target="_blank"
           download
         >
           Resume
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+        </Link>
         <div className="flex gap-3">
-          <a
+          <Link
+            id="linkedin"
+            aria-label="LinkedIn"
+            title="LinkedIn"
             href="https://www.linkedin.com/in/hakan-okay/"
             className="bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             target="_blank"
           >
             <BsLinkedin />
-          </a>
-          <a
+          </Link>
+          <Link
+            id="github"
+            aria-label="GitHub"
+            title="GitHub"
             href="https://github.com/h-okay"
             className="bg-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             target="_blank"
           >
             <BsGithub />
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>
