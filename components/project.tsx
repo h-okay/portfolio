@@ -38,14 +38,16 @@ export default function Project({
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold sm:group-even:text-end group-event:text-start">
-            <Link
-              href={link}
-              className="flex gap-x-1 items-center sm:group-even:justify-end"
-              target="_blank"
-            >
-              {title}
+            <div className="flex gap-x-1 items-center sm:group-even:justify-end">
+              <Link
+                href={link}
+                className="link-underline hover:rainbow-text transition"
+                target="_blank"
+              >
+                {title}
+              </Link>
               <AiOutlineLink className="text-sm" />
-            </Link>
+            </div>
           </h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 sm:group-even:text-end">
             {description}
@@ -54,9 +56,12 @@ export default function Project({
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="px-3 py-1 text-black text-lg shadow-lg rounded-full border shadow-black/[0.03] border-black/20 dark:border-white/20  dark:shadow-white/[0.01] dark:text-white/70"
+                className="px-3 py-1 text-black text-lg shadow-lg rounded-full border shadow-black/[0.1] border-black/20 dark:border-white/20  dark:shadow-white/[0.03] dark:text-white/70 hover:bg-gray-400/50 dark:hover:bg-gray-300/20 group/tooltip relative"
               >
-                {tag}
+                {tag.icon}
+                <span className="absolute scale-0 bottom-full -left-0 transition rounded bg-gray-800 p-2 text-xs text-white whitespace-pre group-hover/tooltip:scale-100">
+                  {tag.name}
+                </span>
               </li>
             ))}
           </ul>

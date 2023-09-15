@@ -36,7 +36,7 @@ export default function SkillsSection({
       <p className="py-4 text-semibold dark:text-white/70 text-black">
         {title}
       </p>
-      <motion.div className="group flex flex-row flex-wrap justify-center gap-2">
+      <motion.div className="flex flex-row flex-wrap justify-center gap-2">
         {skillsData
           .filter((skill) => skill.type === type)
           .map((skill, index) => (

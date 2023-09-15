@@ -13,3 +13,12 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+@layer utilities {
+  .rainbow-text {
+    background-image: linear-gradient(90deg, #556ce3, #c850c0, #ffcc70);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
