@@ -69,9 +69,9 @@ export default function Intro() {
         transition={{ delay: 0.1 }}
       >
         <Link
-          id='contact'
-          aria-label='Contact me'
-          title='Contact me'
+          id='contactLink'
+          aria-label='Say hello'
+          title='Say hello'
           href='#contact'
           className='group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105 dark:bg-[#84A7A1] dark:text-black'
           onClick={() => {
