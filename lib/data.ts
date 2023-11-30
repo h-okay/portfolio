@@ -9,7 +9,6 @@ import {
 } from 'react-icons/bi';
 import {
   FaCss3Alt,
-  FaDev,
   FaDocker,
   FaGithub,
   FaHtml5,
@@ -46,10 +45,10 @@ import blastImg from '@/public/blast.png';
 import diamondsImg from '@/public/diamonds.png';
 import githubImg from '@/public/github.png';
 import nbaImg from '@/public/nba.png';
+import { ActivitySquare, Cog, Shapes } from 'lucide-react';
 import React from 'react';
 import { BsGraphUpArrow } from 'react-icons/bs';
 import { DiGoogleCloudPlatform } from 'react-icons/di';
-import { MdScience } from 'react-icons/md';
 import { VscGithubAction } from 'react-icons/vsc';
 
 export const links = [
@@ -84,17 +83,25 @@ export const experiencesData = [
     title: 'Software Developer',
     location: 'Freelance | Ottawa, ON 🍁',
     description:
-      'Crafted tailored solutions using diverse technologies, such as Python, Docker, and BigQuery, to create data-driven marketing approaches, secure backend APIs, and interactive dashboards for informed decision-making',
-    icon: React.createElement(FaDev),
-    date: 'Feb 2023 - Present',
+      'Created fullstack applications using modern web technologies, trained machine learning models for various purposes and served them over the cloud, reviewed ML methodologies applied to various projects, migrated old code to newer technologies',
+    icon: React.createElement(Shapes),
+    date: 'June 2022 - Present',
   },
   {
-    title: 'Data Scientist',
+    title: 'Backend Engineer',
+    location: 'Datablast | Remote',
+    description:
+      'Created backend endpoints and tests using FastAPI and Pytest, built an SQL generation engine using Jinja and Python, contributed to CLI tools written in Golang and created technical documentations for various tools being built ',
+    icon: React.createElement(Cog),
+    date: 'July 2022 - February 2023',
+  },
+  {
+    title: 'Data Scientist & Engineer',
     location: 'Datablast | Remote',
     description:
       'Contributed to efficient cloud-based data pipelines and analysis endpoints, enabling cross-platform insights, user engagement improvements, and growth within the Blast Data Platform while utilizing Airflow, Kubernetes, and various cloud services',
-    icon: React.createElement(MdScience),
-    date: 'Mar 2022 - Feb 2023',
+    icon: React.createElement(ActivitySquare),
+    date: 'March 2022 - July 2022',
   },
 ] as const;
 
