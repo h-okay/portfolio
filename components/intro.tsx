@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiDownload } from 'react-icons/hi';
+import { TfiWrite } from 'react-icons/tfi';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home');
@@ -93,6 +94,17 @@ export default function Intro() {
           Resume
           <HiDownload className='opacity-60 transition group-hover:translate-y-1' />
         </a>
+        <Link
+          id='blog'
+          aria-label='blog'
+          title='Blog'
+          className='borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10'
+          href='https://blog.hakanokay.dev'
+          target='_blank'
+        >
+          Blog
+          <TfiWrite className='opacity-60 transition group-hover:translate-x-1' />
+        </Link>
         <div className='flex gap-3'>
           <Link
             id='linkedin'
