@@ -1,55 +1,36 @@
-import {
-  BiLogoAws,
-  BiLogoGit,
-  BiLogoGoLang,
-  BiLogoJavascript,
-  BiLogoMongodb,
-  BiLogoPhp,
-  BiLogoTypescript,
-} from 'react-icons/bi';
-import {
-  FaCss3Alt,
-  FaDocker,
-  FaGithub,
-  FaHtml5,
-  FaJava,
-  FaLinux,
-  FaNodeJs,
-  FaPython,
-  FaReact,
-  FaRust,
-} from 'react-icons/fa';
+import { ActivitySquare, Cog, Shapes } from 'lucide-react';
+import { BiLogoGit, BiLogoGoLang, BiLogoJavascript, BiLogoPhp, BiLogoTypescript } from 'react-icons/bi';
+import { DiGoogleCloudPlatform, DiPostgresql } from 'react-icons/di';
+import { FaAws, FaDocker, FaGithub, FaJava, FaLinux, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
 import {
   SiApacheairflow,
-  SiExpress,
   SiFastapi,
   SiGnubash,
+  SiGooglebigquery,
   SiJinja,
   SiJupyter,
   SiKubernetes,
-  SiLooker,
-  SiMetabase,
-  SiMicrosoftexcel,
+  SiMongodb,
   SiNextdotjs,
   SiNumpy,
   SiPandas,
   SiPlotly,
   SiScikitlearn,
+  SiSpring,
   SiStreamlit,
   SiTailwindcss,
   SiTensorflow,
 } from 'react-icons/si';
-import { TbBrandLaravel, TbBrandThreejs, TbSql } from 'react-icons/tb';
+import { TbBrandCSharp, TbBrandLaravel, TbSql } from 'react-icons/tb';
 
+import { BsGraphUpArrow } from 'react-icons/bs';
+import { GrMysql } from 'react-icons/gr';
+import React from 'react';
+import { VscGithubAction } from 'react-icons/vsc';
 import blastImg from '@/public/blast.png';
 import diamondsImg from '@/public/diamonds.png';
 import githubImg from '@/public/github.png';
 import nbaImg from '@/public/nba.png';
-import { ActivitySquare, Cog, Shapes } from 'lucide-react';
-import React from 'react';
-import { BsGraphUpArrow } from 'react-icons/bs';
-import { DiGoogleCloudPlatform } from 'react-icons/di';
-import { VscGithubAction } from 'react-icons/vsc';
 
 export const links = [
   {
@@ -81,27 +62,27 @@ export const links = [
 export const experiencesData = [
   {
     title: 'Software Developer',
-    location: 'Freelance | Ottawa, ON 🍁',
+    location: 'TwinsMusic Enterprises',
     description:
-      'Created fullstack applications using modern web technologies, trained machine learning models for various purposes and served them over the cloud, reviewed ML methodologies applied to various projects, migrated old code to newer technologies',
+      "Redesigned and developed Musme Library, an online, subscription-based music library service for content creators. I'm working on new features and maintaining the platform.",
     icon: React.createElement(Shapes),
+    date: 'September 2023 - Present',
+  },
+  {
+    title: 'Freelance Software Developer',
+    location: 'hakanokay.dev',
+    description:
+      'As a Freelancer, I combine Data Science and Full Stack Development to provide end-to-end, full-stack solutions to companies so that the insights can be easily shared with relevant stakeholders.',
+    icon: React.createElement(Cog),
     date: 'June 2022 - Present',
   },
   {
-    title: 'Backend Engineer',
-    location: 'Datablast | Remote',
+    title: 'Software Developer',
+    location: 'Datablast',
     description:
-      'Created backend endpoints and tests using FastAPI and Pytest, built an SQL generation engine using Jinja and Python, contributed to CLI tools written in Golang and created technical documentations for various tools being built ',
-    icon: React.createElement(Cog),
-    date: 'July 2022 - February 2023',
-  },
-  {
-    title: 'Data Scientist & Engineer',
-    location: 'Datablast | Remote',
-    description:
-      'Contributed to efficient cloud-based data pipelines and analysis endpoints, enabling cross-platform insights, user engagement improvements, and growth within the Blast Data Platform while utilizing Airflow, Kubernetes, and various cloud services',
+      'Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Blast Data Platform to implement data lineage, monitoring, analysis and orchestration features.',
     icon: React.createElement(ActivitySquare),
-    date: 'March 2022 - July 2022',
+    date: 'March 2022 - Feb 2023',
   },
 ] as const;
 
@@ -116,10 +97,7 @@ export const projectsData = [
       { icon: React.createElement(TbSql), name: 'SQL' },
       { icon: React.createElement(SiApacheairflow), name: 'Airflow' },
       { icon: React.createElement(SiKubernetes), name: 'Kubernetes' },
-      {
-        icon: React.createElement(DiGoogleCloudPlatform),
-        name: 'Google Cloud',
-      },
+      { icon: React.createElement(DiGoogleCloudPlatform), name: 'Google Cloud' },
       { icon: React.createElement(FaDocker), name: 'Docker' },
       { icon: React.createElement(TbBrandLaravel), name: 'Laravel' },
       { icon: React.createElement(SiFastapi), name: 'FastAPI' },
@@ -141,10 +119,7 @@ export const projectsData = [
       { icon: React.createElement(VscGithubAction), name: 'Github Actions' },
       { icon: React.createElement(SiScikitlearn), name: 'Scikit-learn' },
       { icon: React.createElement(SiTensorflow), name: 'Tensorflow' },
-      {
-        icon: React.createElement(DiGoogleCloudPlatform),
-        name: 'Google Cloud',
-      },
+      { icon: React.createElement(DiGoogleCloudPlatform), name: 'Google Cloud' },
       { icon: React.createElement(SiFastapi), name: 'FastAPI' },
       { icon: React.createElement(SiPlotly), name: 'Plotly' },
     ],
@@ -180,90 +155,32 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  // Languages
   { name: 'Python', icon: React.createElement(FaPython), type: 'language' },
-  { name: 'Java', icon: React.createElement(FaJava), type: 'language' },
   { name: 'SQL', icon: React.createElement(TbSql), type: 'language' },
-  { name: 'HTML', icon: React.createElement(FaHtml5), type: 'language' },
-  { name: 'CSS', icon: React.createElement(FaCss3Alt), type: 'language' },
-  {
-    name: 'JavaScript',
-    icon: React.createElement(BiLogoJavascript),
-    type: 'language',
-  },
-  {
-    name: 'TypeScript',
-    icon: React.createElement(BiLogoTypescript),
-    type: 'language',
-  },
-  {
-    name: 'NoSQL',
-    icon: React.createElement(BiLogoMongodb),
-    type: 'language',
-  },
-  { name: 'Pandas', icon: React.createElement(SiPandas), type: 'framework' },
-  { name: 'NumPy', icon: React.createElement(SiNumpy), type: 'framework' },
-  {
-    name: 'Matplotlib',
-    icon: React.createElement(BsGraphUpArrow),
-    type: 'framework',
-  },
-  {
-    name: 'Scikit-learn',
-    icon: React.createElement(SiScikitlearn),
-    type: 'framework',
-  },
-  {
-    name: 'FastAPI',
-    icon: React.createElement(SiFastapi),
-    type: 'framework',
-  },
+  { name: 'TypeScript', icon: React.createElement(BiLogoTypescript), type: 'language' },
+  { name: 'JavaScript', icon: React.createElement(BiLogoJavascript), type: 'language' },
+  { name: 'Go', icon: React.createElement(BiLogoGoLang), type: 'language' },
+  { name: 'Java', icon: React.createElement(FaJava), type: 'language' },
+  // Frameworks
   { name: 'React', icon: React.createElement(FaReact), type: 'framework' },
-  {
-    name: 'Next.js',
-    icon: React.createElement(SiNextdotjs),
-    type: 'framework',
-  },
+  { name: 'Next.js', icon: React.createElement(SiNextdotjs), type: 'framework' },
   { name: 'Node.js', icon: React.createElement(FaNodeJs), type: 'framework' },
-  {
-    name: 'Tailwind',
-    icon: React.createElement(SiTailwindcss),
-    type: 'framework',
-  },
-  {
-    name: 'Express',
-    icon: React.createElement(SiExpress),
-    type: 'framework',
-  },
+  { name: 'Spring Boot', icon: React.createElement(SiSpring), type: 'framework' },
+  { name: 'Tailwind', icon: React.createElement(SiTailwindcss), type: 'framework' },
+  { name: 'FastAPI', icon: React.createElement(SiFastapi), type: 'framework' },
+  // Platforms
   { name: 'Linux', icon: React.createElement(FaLinux), type: 'platform' },
   { name: 'Git', icon: React.createElement(BiLogoGit), type: 'platform' },
   { name: 'Docker', icon: React.createElement(FaDocker), type: 'platform' },
-  {
-    name: 'Airflow',
-    icon: React.createElement(SiApacheairflow),
-    type: 'platform',
-  },
-  {
-    name: 'Google Cloud',
-    icon: React.createElement(DiGoogleCloudPlatform),
-    type: 'platform',
-  },
-  { name: 'Looker', icon: React.createElement(SiLooker), type: 'platform' },
-  {
-    name: 'Metabase',
-    icon: React.createElement(SiMetabase),
-    type: 'platform',
-  },
-  {
-    name: 'Excel',
-    icon: React.createElement(SiMicrosoftexcel),
-    type: 'platform',
-  },
-  { name: 'Go', icon: React.createElement(BiLogoGoLang), type: 'progress' },
-  { name: 'Rust', icon: React.createElement(FaRust), type: 'progress' },
-  {
-    name: 'Three.js',
-    icon: React.createElement(TbBrandThreejs),
-    type: 'progress',
-  },
-  { name: 'AWS', icon: React.createElement(BiLogoAws), type: 'progress' },
+  { name: 'Airflow', icon: React.createElement(SiApacheairflow), type: 'platform' },
+  { name: 'GCP', icon: React.createElement(DiGoogleCloudPlatform), type: 'platform' },
+  { name: 'AWS', icon: React.createElement(FaAws), type: 'platform' },
+  // Databases
+  { name: 'MySQL', icon: React.createElement(GrMysql), type: 'databases' },
+  { name: 'Postgres', icon: React.createElement(DiPostgresql), type: 'databases' },
+  { name: 'MongoDB', icon: React.createElement(SiMongodb), type: 'databases' },
+  { name: 'BigQuery', icon: React.createElement(SiGooglebigquery), type: 'databases' },
+  // Learning
+  { name: 'C#', icon: React.createElement(TbBrandCSharp), type: 'progress' },
 ] as const;
