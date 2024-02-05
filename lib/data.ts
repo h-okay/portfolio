@@ -27,7 +27,7 @@ import { BsGraphUpArrow } from 'react-icons/bs';
 import { GrMysql } from 'react-icons/gr';
 import React from 'react';
 import { VscGithubAction } from 'react-icons/vsc';
-import blastImg from '@/public/blast.png';
+import bruinImg from '@/public/bruin.png';
 import diamondsImg from '@/public/diamonds.png';
 import githubImg from '@/public/github.png';
 import nbaImg from '@/public/nba.png';
@@ -80,7 +80,7 @@ export const experiencesData = [
     title: 'Software Developer',
     location: 'Bruin',
     description:
-      'Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Blast Data Platform to implement data lineage, monitoring, analysis and orchestration features.',
+      'Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Bruin Platform to implement data lineage, monitoring, analysis and orchestration features.',
     icon: React.createElement(ActivitySquare),
     date: 'March 2022 - Feb 2023',
   },
@@ -88,10 +88,10 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Blast Data Platform',
+    title: 'Bruin',
     description:
-      'I worked as a Data and Backend Engineer on this startup for a year. Users can easily create and manage data pipelines on the cloud.',
-    link: 'https://www.datablast.io/blast',
+      'I worked as a Software Developer on this startup for a year. Users can easily create and manage data pipelines on the cloud.',
+    link: 'https://getbruin.com/',
     tags: [
       { icon: React.createElement(FaPython), name: 'Python' },
       { icon: React.createElement(TbSql), name: 'SQL' },
@@ -104,7 +104,7 @@ export const projectsData = [
       { icon: React.createElement(FaLinux), name: 'Linux' },
       { icon: React.createElement(SiJinja), name: 'Jinja' },
     ],
-    imageUrl: blastImg,
+    imageUrl: bruinImg,
   },
   {
     title: 'NBA Analytics',
