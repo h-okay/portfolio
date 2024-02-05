@@ -9,6 +9,7 @@ const SectionNameMapping = {
   language: 'Languages',
   framework: 'Frameworks & Libraries',
   platform: 'Platforms & Tools',
+  databases: 'Databases & Warehouses',
   progress: 'In Progress',
 };
 
