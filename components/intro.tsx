@@ -58,9 +58,8 @@ export default function Intro() {
       >
         Hello, <span className='font-semibold'>I'm Hakan.</span> I'm a Software
         Developer with 3+ years of experience. I ❤️ building{' '}
-        <span className='font-semibold'>web applications</span> to solve
-        real-world problems and share{' '}
-        <span className='font-semibold'>data-driven insights.</span>
+        <span className='font-semibold'>web applications</span> and <span className='font-semibold'>services</span>{' '}
+        to solve real-world problems.
       </motion.h1>
 
       <motion.div
