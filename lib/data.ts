@@ -78,7 +78,7 @@ export const experiencesData = [
   },
   {
     title: 'Software Developer',
-    location: 'Datablast',
+    location: 'Bruin',
     description:
       'Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Blast Data Platform to implement data lineage, monitoring, analysis and orchestration features.',
     icon: React.createElement(ActivitySquare),
