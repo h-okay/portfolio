@@ -2,13 +2,13 @@
 
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
 
-import { useActiveSectionContext } from '@/context/active-section-context';
-import { useSectionInView } from '@/lib/hooks';
-import { motion } from 'framer-motion';
+import { HiDownload } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HiDownload } from 'react-icons/hi';
 import { TfiWrite } from 'react-icons/tfi';
+import { motion } from 'framer-motion';
+import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home');
@@ -57,7 +57,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         Hello, <span className='font-semibold'>I'm Hakan.</span> I'm a Software
-        Developer with 3 years of experience. I ❤️ building{' '}
+        Developer with 3+ years of experience. I ❤️ building{' '}
         <span className='font-semibold'>web applications</span> to solve
         real-world problems and share{' '}
         <span className='font-semibold'>data-driven insights.</span>
