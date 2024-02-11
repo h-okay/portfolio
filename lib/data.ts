@@ -61,7 +61,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Software Developer',
+    title: 'Software Engineer',
     location: 'TwinsMusic Enterprises',
     description:
       "Redesigned and developed Musme Library, an online, subscription-based music library service for content creators. I'm working on new features and maintaining the platform.",
@@ -77,7 +77,7 @@ export const experiencesData = [
     date: 'June 2022 - Present',
   },
   {
-    title: 'Software Developer',
+    title: 'Software Engineer',
     location: 'Bruin',
     description:
       'Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Bruin Platform to implement data lineage, monitoring, analysis and orchestration features.',
