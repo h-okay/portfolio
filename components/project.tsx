@@ -11,13 +11,7 @@ import { AiOutlineLink } from 'react-icons/ai';
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({
-  title,
-  description,
-  link,
-  tags,
-  imageUrl,
-}: ProjectProps) {
+export default function Project({ title, description, link, tags, imageUrl }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -39,19 +33,13 @@ export default function Project({
         <div className='flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]'>
           <h3 className='group-event:text-start text-2xl font-semibold sm:group-even:text-end'>
             <div className='flex items-center gap-x-1 sm:group-even:justify-end'>
-              <Link
-                href={link}
-                className='link-underline hover:rainbow-text transition'
-                target='_blank'
-              >
+              <Link href={link} className='link-underline hover:rainbow-text transition' target='_blank'>
                 {title}
               </Link>
               <AiOutlineLink className='text-sm' />
             </div>
           </h3>
-          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70 sm:group-even:text-end'>
-            {description}
-          </p>
+          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70 sm:group-even:text-end'>{description}</p>
           <ul className='mt-4 flex flex-wrap gap-2 pt-3 sm:mt-auto sm:group-even:justify-end'>
             {tags.map((tag, index) => (
               <li

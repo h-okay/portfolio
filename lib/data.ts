@@ -1,9 +1,11 @@
 import { ActivitySquare, Cog, Shapes } from 'lucide-react';
 import { BiLogoGit, BiLogoGoLang, BiLogoJavascript, BiLogoPhp, BiLogoTypescript } from 'react-icons/bi';
 import { DiGoogleCloudPlatform, DiPostgresql } from 'react-icons/di';
-import { FaAws, FaDocker, FaGithub, FaJava, FaLinux, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { FaAws, FaDocker, FaGithub, FaJava, FaLinux, FaNodeJs, FaPython, FaReact, FaStripe } from 'react-icons/fa';
 import {
   SiApacheairflow,
+  SiAuth0,
+  SiChatbot,
   SiFastapi,
   SiGnubash,
   SiGooglebigquery,
@@ -11,6 +13,7 @@ import {
   SiJupyter,
   SiKubernetes,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
   SiNumpy,
   SiPandas,
@@ -20,17 +23,21 @@ import {
   SiStreamlit,
   SiTailwindcss,
   SiTensorflow,
+  SiTrpc,
+  SiTypescript,
+  SiVectorlogozone,
 } from 'react-icons/si';
 import { TbBrandCSharp, TbBrandLaravel, TbSql } from 'react-icons/tb';
 
-import { BsGraphUpArrow } from 'react-icons/bs';
-import { GrMysql } from 'react-icons/gr';
-import React from 'react';
-import { VscGithubAction } from 'react-icons/vsc';
 import bruinImg from '@/public/bruin.png';
 import diamondsImg from '@/public/diamonds.png';
 import githubImg from '@/public/github.png';
 import nbaImg from '@/public/nba.png';
+import quillImg from '@/public/quill.png';
+import React from 'react';
+import { BsGraphUpArrow } from 'react-icons/bs';
+import { GrMysql } from 'react-icons/gr';
+import { VscGithubAction } from 'react-icons/vsc';
 
 export const links = [
   {
@@ -88,9 +95,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: 'Quill',
+    description:
+      'Quill allows you to engage in conversations with a Language Model (LLM) customized with the content of the uploaded PDF files.',
+    link: 'https://quill.hakanokay.dev/',
+    tags: [
+      { icon: React.createElement(SiTypescript), name: 'TypeScript' },
+      { icon: React.createElement(SiTailwindcss), name: 'Tailwind' },
+      { icon: React.createElement(FaReact), name: 'React' },
+      { icon: React.createElement(SiMysql), name: 'MySQL' },
+      { icon: React.createElement(SiNextdotjs), name: 'Next.js' },
+      { icon: React.createElement(SiTrpc), name: 'tRPC' },
+      { icon: React.createElement(SiVectorlogozone), name: 'Pinecone' },
+      { icon: React.createElement(SiChatbot), name: 'Langchain' },
+      { icon: React.createElement(FaStripe), name: 'Stripe' },
+      { icon: React.createElement(SiAuth0), name: 'Kinde' },
+    ],
+    imageUrl: quillImg,
+  },
+  {
     title: 'Bruin',
     description:
-      'I worked as a Software Developer on this startup for a year. Users can easily create and manage data pipelines on the cloud.',
+      'Transform, document, and monitor your data on a serverless infrastructure and easily create and manage data pipelines on the cloud.',
     link: 'https://getbruin.com/',
     tags: [
       { icon: React.createElement(FaPython), name: 'Python' },
@@ -128,7 +154,7 @@ export const projectsData = [
   {
     title: 'Gem Trend',
     description:
-      'Web application for diamond price prediction. It has features for data exploration, filtering, sorting and price prediction through XGBoost and Linear Regressions models.',
+      'Web application for diamond price prediction. Explore, filter, sort your data and access prediction through XGBoost and Linear Regressions models.',
     link: 'https://github.com/h-okay/random/tree/main/diamonds',
     tags: [
       { icon: React.createElement(FaPython), name: 'Python' },
