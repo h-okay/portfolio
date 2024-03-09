@@ -15,9 +15,7 @@ type ThemeContextType = {
   toggleTheme: () => void;
 };
 
-export default function ThemeContextProvider({
-  children,
-}: ThemeContextProviderProps) {
+export default function ThemeContextProvider({ children }: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {

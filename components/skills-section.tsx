@@ -1,9 +1,7 @@
 import { skillsData } from '@/lib/data';
 import { motion } from 'framer-motion';
 
-const uniqueSections = Array.from(
-  new Set(skillsData.map((skill) => skill.type))
-);
+const uniqueSections = Array.from(new Set(skillsData.map((skill) => skill.type)));
 
 type SkillSectionProps = {
   className?: string;
@@ -20,11 +18,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function SkillsSection({
-  className = '',
-  type,
-  title,
-}: SkillSectionProps) {
+export default function SkillsSection({ className = '', type, title }: SkillSectionProps) {
   return (
     <motion.div
       className={className}
@@ -33,9 +27,7 @@ export default function SkillsSection({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <p className='text-semibold py-4 text-black dark:text-white/70'>
-        {title}
-      </p>
+      <p className='text-semibold py-4 text-black dark:text-white/70'>{title}</p>
       <motion.div className='flex flex-row flex-wrap justify-center gap-2'>
         {skillsData
           .filter((skill) => skill.type === type)

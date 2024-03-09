@@ -16,11 +16,7 @@ export const metadata = {
     'Hakan Okay is a Software Developer with 3 years of experience in Data Science/Engineering and Web Development. He loves Python, SQL, React, Airflow and BigQuery',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' className='!scroll-smooth'>
       <body

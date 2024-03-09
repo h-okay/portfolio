@@ -21,9 +21,7 @@ export function getErrorMessage(error: unknown): string {
   return message;
 }
 
-export function isEmailSentSuccessfullByStatusCode(
-  response: SendEmailResponseType
-): boolean {
+export function isEmailSentSuccessfullByStatusCode(response: SendEmailResponseType): boolean {
   if (response.statusCode === 200) {
     return true;
   }

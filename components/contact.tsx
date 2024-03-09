@@ -45,9 +45,7 @@ export default function Contact() {
             return;
           }
           toast.success('Email sent successfully!');
-          const form = document.getElementById(
-            'contact-form'
-          ) as HTMLFormElement;
+          const form = document.getElementById('contact-form') as HTMLFormElement;
           form.reset();
         }}
       >
