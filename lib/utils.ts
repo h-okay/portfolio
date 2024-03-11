@@ -1,29 +1,31 @@
-import { SendEmailResponseType } from '@/lib/types';
+import { SendEmailResponseType } from "@/lib/types"
 
 export function validateString(value: unknown, maxLength: number) {
-  if (!value || typeof value !== 'string' || value.length > maxLength) {
-    return false;
+  if (!value || typeof value !== "string" || value.length > maxLength) {
+    return false
   }
-  return true;
+  return true
 }
 
 export function getErrorMessage(error: unknown): string {
-  let message: string;
+  let message: string
   if (error instanceof Error) {
-    message = error.message;
-  } else if (error && typeof error === 'object' && 'message' in error) {
-    message = String(error.message);
-  } else if (typeof error === 'string') {
-    message = error;
+    message = error.message
+  } else if (error && typeof error === "object" && "message" in error) {
+    message = String(error.message)
+  } else if (typeof error === "string") {
+    message = error
   } else {
-    message = 'Unknown error';
+    message = "Unknown error"
   }
-  return message;
+  return message
 }
 
-export function isEmailSentSuccessfullByStatusCode(response: SendEmailResponseType): boolean {
+export function isEmailSentSuccessfullByStatusCode(
+  response: SendEmailResponseType
+): boolean {
   if (response.statusCode === 200) {
-    return true;
+    return true
   }
-  return false;
+  return false
 }
