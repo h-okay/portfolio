@@ -10,6 +10,7 @@ import { DiGoogleCloudPlatform, DiPostgresql } from "react-icons/di"
 import {
   FaAws,
   FaConfluence,
+  FaCss3,
   FaDocker,
   FaGithub,
   FaJava,
@@ -27,6 +28,8 @@ import {
   SiFastapi,
   SiGnubash,
   SiGooglebigquery,
+  SiHtml5,
+  SiJavascript,
   SiJinja,
   SiJira,
   SiJupyter,
@@ -54,6 +57,7 @@ import githubImg from "@/public/github.png"
 import musmeImg from "@/public/musme.png"
 import nbaImg from "@/public/nba.png"
 import quillImg from "@/public/quill.png"
+import selfdrivingImg from "@/public/selfdriving.png"
 import React from "react"
 import { BsGraphUpArrow } from "react-icons/bs"
 import { GrMysql } from "react-icons/gr"
@@ -151,6 +155,18 @@ export const projectsData = [
       { icon: React.createElement(SiAuth0), name: "Kinde" },
     ],
     imageUrl: quillImg,
+  },
+  {
+    title: "WorldMaker",
+    description:
+      "Create cities right in your browser using roads, traffic signs, buildings and trees. The next phase is to add self-driving cars using neural networks.",
+    link: "https://selfdriving.hakanokay.dev/",
+    tags: [
+      { icon: React.createElement(SiJavascript), name: "Javascript" },
+      { icon: React.createElement(SiHtml5), name: "HTML" },
+      { icon: React.createElement(FaCss3), name: "CSS" },
+    ],
+    imageUrl: selfdrivingImg,
   },
   {
     title: "Bruin",

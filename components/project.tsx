@@ -3,6 +3,7 @@
 import { useScroll, useTransform } from "framer-motion"
 
 import { projectsData } from "@/lib/data"
+import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -70,7 +71,11 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality="95"
-          className="absolute -right-40 top-[4.21rem] hidden w-[28.25rem] rounded-t-lg border border-black/10 shadow-2xl  transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 dark:border-white/10 sm:block"
+          objectFit="cover"
+          className={cn(
+            "absolute -right-40 top-[4.21rem] hidden w-[28.25rem] rounded-t-lg border border-black/10 shadow-2xl  transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 dark:border-white/10 sm:block",
+            { "w-[32rem] top-[4.6rem] -right-52": title === "WorldMaker" }
+          )}
         />
       </section>
     </motion.div>
