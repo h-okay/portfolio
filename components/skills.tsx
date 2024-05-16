@@ -10,7 +10,7 @@ const SectionNameMapping = {
   framework: "Frameworks & Libraries",
   platform: "Platforms & Tools",
   databases: "Databases & Warehouses",
-  progress: "In Progress",
+  /*   progress: "In Progress", */
 }
 
 export default function Skills() {
@@ -20,7 +20,7 @@ export default function Skills() {
     <section
       ref={ref}
       id="skills"
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="max-w-[53rem] scroll-mt-28 text-center font-poppins mb-28 sm:mb-0"
     >
       <SectionHeading>Skills</SectionHeading>
       <ul className="text-lg text-gray-800">

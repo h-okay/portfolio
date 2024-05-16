@@ -10,7 +10,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
+      className="max-w-[45rem] scroll-mt-28 text-center leading-8 font-poppins font-light mb-28 sm:mb-0"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -18,16 +18,16 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3 text-lg tracking-wide">
-        I'm a versatile software developer with the experience of developing web
-        applications and services, creating efficient data pipelines and
-        training/deploying machine learning models for different purposes.
+        I'm an adaptable, results-driven, versatile Software Engineer with 4+
+        years of experience designing and implementing diverse web applications
+        and services across various domains using modern technological
+        frameworks, tools and languages.
       </p>
       <br />
       <p className="mb-3 text-lg tracking-wide">
-        I'm fluent in Python, SQL, and English. I've also written a good amount
-        of TypeScript, JavaScript, HTML, and CSS. I have some exposure to Go and
-        Java. I learn quickly, care about detail and I like finishing tasks and
-        focusing on the results.
+        I ❤️ working with Python, SQL and Go. I also written a good amount of
+        TypeScript/JavaScript/Java. I hold a B.Sc. in Engineering and a Diploma
+        in CS.
       </p>
     </motion.section>
   )

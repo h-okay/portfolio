@@ -33,7 +33,7 @@ export default function SkillsSection({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <p className="text-semibold py-4 text-black dark:text-white/70">
+      <p className="text-semibold py-4 text-black dark:text-white/70 font-poppins">
         {title}
       </p>
       <motion.div className="flex flex-row flex-wrap justify-center gap-2">
@@ -42,7 +42,7 @@ export default function SkillsSection({
           .map((skill, index) => (
             <motion.li
               key={index}
-              className="rounded-xl border border-black/[0.2] bg-white px-5 py-3 shadow-lg shadow-black/[0.03] dark:border-white/[0.1] dark:bg-white/10 dark:text-white/80 dark:shadow-white/[0.01]"
+              className="rounded-xl border border-black/[0.2] bg-white px-5 py-3 shadow-lg shadow-black/[0.03] dark:border-white/[0.1] dark:bg-white/10 dark:text-white/80 dark:shadow-white/[0.01] font-light"
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"

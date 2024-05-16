@@ -17,7 +17,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
+      className="mb-28 max-w-[50rem] scroll-mt-[100rem] sm:mb-0 -mt-4 text-center font-poppins"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -33,8 +33,9 @@ export default function Intro() {
               height="192"
               quality="95"
               priority
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl"
+              className="h-28 w-28 rounded-full border-[0.15rem] border-white shadow-xl"
             />
+
             <motion.span
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -51,16 +52,22 @@ export default function Intro() {
           </motion.div>
         </div>
       </div>
+      <motion.p
+        className="text-3xl font-light sm:text-5xl sm:my-8 my-6 px-4"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+      >
+        Hello, <span className="font-medium">I'm Hakan.</span>
+      </motion.p>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-normal leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-extralight sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, <span className="font-semibold">I'm Hakan.</span> I'm a Software
-        Developer with 3+ years of experience. I ❤️ building{" "}
-        <span className="font-semibold">web applications</span> and{" "}
-        <span className="font-semibold">services</span> to solve real-world
-        problems.
+        I'm a <span className="font-medium">full-stack generalist</span> with 4+
+        years of experience building{" "}
+        <span className="font-medium">web applications</span> and{" "}
+        <span className="font-medium">services</span>.
       </motion.h1>
 
       <motion.div
@@ -80,7 +87,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now())
           }}
         >
-          Say Hello{" "}
+          Say Hi{" "}
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
         <a
