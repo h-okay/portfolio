@@ -22,6 +22,7 @@ import {
 } from "react-icons/fa"
 import { GiMatterStates } from "react-icons/gi"
 import {
+  SiAmazonredshift,
   SiApacheairflow,
   SiAuth0,
   SiChatbot,
@@ -41,6 +42,7 @@ import {
   SiPandas,
   SiPlotly,
   SiScikitlearn,
+  SiSnowflake,
   SiSpring,
   SiStreamlit,
   SiTailwindcss,
@@ -49,7 +51,7 @@ import {
   SiTypescript,
   SiVectorlogozone,
 } from "react-icons/si"
-import { TbBrandCSharp, TbBrandLaravel, TbSql } from "react-icons/tb"
+import { TbBrandLaravel, TbSql } from "react-icons/tb"
 
 import bruinImg from "@/public/bruin.png"
 import diamondsImg from "@/public/diamonds.png"
@@ -97,15 +99,15 @@ export const experiencesData = [
     description:
       "Redesigned and developed Musme Library, an online, subscription-based music library service for content creators. I'm working on new features and maintaining the platform.",
     icon: React.createElement(Shapes),
-    date: "September 2023 - Present",
+    date: "Sep 2023 - Present",
   },
   {
-    title: "Freelance Software Developer",
+    title: "Software Engineer",
     location: "hakanokay.dev",
     description:
       "As a Freelancer, I combine Data Science and Full Stack Development to provide end-to-end, full-stack solutions to companies so that the insights can be easily shared with relevant stakeholders.",
     icon: React.createElement(Cog),
-    date: "June 2022 - Present",
+    date: "Feb 2023 - Sep 2023",
   },
   {
     title: "Software Engineer",
@@ -113,7 +115,7 @@ export const experiencesData = [
     description:
       "Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Bruin Platform to implement data lineage, monitoring, analysis and orchestration features.",
     icon: React.createElement(ActivitySquare),
-    date: "March 2022 - Feb 2023",
+    date: "Mar 2022 - Feb 2023",
   },
 ] as const
 
@@ -266,16 +268,26 @@ export const skillsData = [
   },
   { name: "Node.js", icon: React.createElement(FaNodeJs), type: "framework" },
   {
-    name: "Spring Boot",
-    icon: React.createElement(SiSpring),
-    type: "framework",
-  },
-  {
     name: "Tailwind",
     icon: React.createElement(SiTailwindcss),
     type: "framework",
   },
   { name: "FastAPI", icon: React.createElement(SiFastapi), type: "framework" },
+  {
+    name: "Spring Boot",
+    icon: React.createElement(SiSpring),
+    type: "framework",
+  },
+  {
+    name: "Pandas",
+    icon: React.createElement(SiPandas),
+    type: "framework",
+  },
+  {
+    name: "Scikit-learn",
+    icon: React.createElement(SiScikitlearn),
+    type: "framework",
+  },
   // Platforms
   { name: "Linux", icon: React.createElement(FaLinux), type: "platform" },
   { name: "Git", icon: React.createElement(BiLogoGit), type: "platform" },
@@ -304,6 +316,14 @@ export const skillsData = [
     icon: React.createElement(SiGooglebigquery),
     type: "databases",
   },
-  // Learning
-  { name: "C#", icon: React.createElement(TbBrandCSharp), type: "progress" },
+  {
+    name: "Redshift",
+    icon: React.createElement(SiAmazonredshift),
+    type: "databases",
+  },
+  {
+    name: "Snowflake",
+    icon: React.createElement(SiSnowflake),
+    type: "databases",
+  },
 ] as const
