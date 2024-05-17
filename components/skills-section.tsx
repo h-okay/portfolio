@@ -42,7 +42,7 @@ export default function SkillsSection({
           .map((skill, index) => (
             <motion.li
               key={index}
-              className="rounded-xl border border-black/[0.2] bg-white px-5 py-3 shadow-lg shadow-black/[0.03] dark:border-white/[0.1] dark:bg-white/10 dark:text-white/80 dark:shadow-white/[0.01] font-light"
+              className="rounded-xl border border-black/[0.2] bg-white px-5 py-3 shadow-lg shadow-black/[0.03] dark:border-white/[0.1] dark:bg-gray-700/50 dark:text-white dark:shadow-white/[0.01] font-light"
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"
