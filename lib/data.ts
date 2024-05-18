@@ -97,7 +97,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "TwinsMusic Enterprises",
     description:
-      "Redesigned and developed Musme Library, an online, subscription-based music library service for content creators. I'm working on new features and maintaining the platform.",
+      "I work on Musme Library & App to improve the performance and generate more traffic. I mentor team members/interns and integrate various services on a small but efficient cloud infrastructure.",
     icon: React.createElement(Shapes),
     date: "Sep 2023 - Present",
   },
@@ -105,7 +105,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "hakanokay.dev",
     description:
-      "As a Freelancer, I combine Data Science and Full Stack Development to provide end-to-end, full-stack solutions to companies so that the insights can be easily shared with relevant stakeholders.",
+      "I developed machine learning models and APIs, created web applications, improved and managed ETL processes for different organizations.",
     icon: React.createElement(Cog),
     date: "Feb 2023 - Sep 2023",
   },
@@ -113,7 +113,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Bruin",
     description:
-      "Built and managed ETL pipelines, implemented new features, fixed bugs, created documentation, trained and deployed machine learning models for clients from various industries. I also worked on Bruin Platform to implement data lineage, monitoring, analysis and orchestration features.",
+      "I built solutions for faster onboarding, worked on a custom querying language's parser, improved a CLI tool for data transformations, optimized RESTful API endpoints for analytics, and managed ETL pipelines.",
     icon: React.createElement(ActivitySquare),
     date: "Mar 2022 - Feb 2023",
   },
