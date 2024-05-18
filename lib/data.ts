@@ -3,7 +3,6 @@ import {
   BiLogoGit,
   BiLogoGoLang,
   BiLogoJavascript,
-  BiLogoPhp,
   BiLogoTypescript,
 } from "react-icons/bi"
 import { DiGoogleCloudPlatform, DiPostgresql } from "react-icons/di"
@@ -12,7 +11,6 @@ import {
   FaConfluence,
   FaCss3,
   FaDocker,
-  FaGithub,
   FaJava,
   FaLinux,
   FaNodeJs,
@@ -27,26 +25,20 @@ import {
   SiAuth0,
   SiChatbot,
   SiFastapi,
-  SiGnubash,
   SiGooglebigquery,
   SiHtml5,
   SiJavascript,
   SiJinja,
   SiJira,
-  SiJupyter,
   SiKubernetes,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
-  SiNumpy,
   SiPandas,
-  SiPlotly,
   SiScikitlearn,
   SiSnowflake,
   SiSpring,
-  SiStreamlit,
   SiTailwindcss,
-  SiTensorflow,
   SiTrpc,
   SiTypescript,
   SiVectorlogozone,
@@ -54,16 +46,12 @@ import {
 import { TbBrandLaravel, TbSql } from "react-icons/tb"
 
 import bruinImg from "@/public/bruin.png"
-import diamondsImg from "@/public/diamonds.png"
 import githubImg from "@/public/github.png"
 import musmeImg from "@/public/musme.png"
-import nbaImg from "@/public/nba.png"
 import quillImg from "@/public/quill.png"
 import selfdrivingImg from "@/public/selfdriving.png"
 import React from "react"
-import { BsGraphUpArrow } from "react-icons/bs"
 import { GrMysql } from "react-icons/gr"
-import { VscGithubAction } from "react-icons/vsc"
 
 export const links = [
   {
@@ -192,7 +180,7 @@ export const projectsData = [
     ],
     imageUrl: bruinImg,
   },
-  {
+  /* {
     title: "NBA Analytics",
     description:
       "Dashboard providing NBA stats, analytics and machine learning predictions. It has features for classification, clustering as well as player and team statistics.",
@@ -232,7 +220,7 @@ export const projectsData = [
       { icon: React.createElement(FaGithub), name: "Github" },
     ],
     imageUrl: diamondsImg,
-  },
+  }, */
   {
     title: "Check my GitHub!",
     description:
